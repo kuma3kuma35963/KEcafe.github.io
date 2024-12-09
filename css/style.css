@@ -138,13 +138,9 @@
 }
 .mainphoto img{
   width: 100%;
+height: 710px;
 }
-#mainphoto1{
-  height: 710px;
-}
-#mainphoto2{
-  height: 350px;
-}
+
 #NewTopics{
   width: 90%;
   margin: 0 auto;
