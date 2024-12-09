@@ -1,0 +1,395 @@
+/* リセットCSS */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    list-style-type: none;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  p{
+    color: #000;
+  }
+  li{
+    list-style: none;
+  }
+  img{
+    display: block;
+  }
+  body{
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  }
+
+    
+  /* ヘッダー部分 */
+  #top{
+    width: 95%;
+    margin: 0 auto;
+    height: 100px;
+  }
+  .container{
+    display: flex;
+  }
+  .contents-nav1{
+    display: flex;
+    padding-top: 27px;
+  }
+  #logo li{
+    float: left;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+ 
+  }
+
+#logo li a:hover{
+     color: #43af31;
+   transition: .3s;
+
+}
+.container nav{
+  padding-top: 10px;
+  z-index: 1000;
+}
+.contents-nav2{
+  display: flex;
+  margin-left: auto;
+  padding-top: 20px;
+}
+  #tenpo{
+    display: flex;
+  }
+  #tenpo li{
+    width: 80px;
+    }
+#tenpo li a:hover{
+    opacity: 0.7;
+}
+
+.contents-nav3{
+  margin-left: auto;
+  padding-top: 20px;
+  z-index: 2000;
+}
+.header-nav{
+  background-color: #fff;
+  position: fixed;
+  text-align: left;
+  transform: translateX(150%);
+  right: 0%;
+  transition:0.5s ease-in-out;
+  width: 80%;
+}
+.header-menu{
+  width: 90%;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.header-menu .fa-solid{
+  float: right;
+  padding-top: 32px;
+}
+.header-menu li{
+  padding: 10px 10px;
+}
+.header-menu li a{
+  font-size: 14px;
+}
+.header-menu li a:hover{
+  text-decoration: underline;
+}
+.drawer-btn:checked~.header-nav{
+  transform: translateX(0%);
+
+}
+.drawer-btn{
+  position: absolute;
+  right: 20px;
+  top: 44px;
+  transform: scale(2);
+  opacity: 0;
+  z-index: 2001;
+}
+.header-cover{
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  
+  .contents-nav2{
+    display: none;
+    
+  }
+}
+
+
+/* メイン */
+
+#mainPhoto{
+    width: 100%;
+  }
+#mainPhoto img{
+    width: 100%;
+  }
+.mainphoto {
+  width: 100%;
+}
+.mainphoto img{
+  width: 100%;
+}
+#mainphoto1{
+  height: 710px;
+}
+#mainphoto2{
+  height: 350px;
+}
+#NewTopics{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-size: 36px;
+  text-align: center;
+}
+#NewTopics span{
+    font-size: 16px;
+}
+#new ul{
+    width: 1040px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;  
+}
+#new ul li{
+    display: block;
+    width: 320px;
+    font-size: 16px;
+    text-align: left;
+  }
+  #campaign{
+    width: 90%;
+    margin: 50px auto;
+
+  }
+  #campaign ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #campaignP{
+    width: 90%;
+    margin:auto;
+  }
+
+  #campaignP ul{
+    width: 1040px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+  }
+#News{
+  padding-top: 100px;
+    font-size: 36px;
+    text-align: center;
+}
+#News span{
+    font-size: 16px;
+}
+#NewsA{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+#NewsA1{
+  width: 35%;
+}
+
+#NewsA ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px 40px;
+  }
+  #NewsA ul li a{
+    display: flex;
+    align-items: center;
+  }
+
+  #NewsA2{
+    width: 25%;
+  }
+  .NewsA2-1{
+    font-size: 12px;
+    margin-bottom: 8%;
+  }
+  #NewsA3{
+    width: 25%;
+  }
+  .NewsA3-1{
+    font-size: 12px;
+    margin-bottom: 8%;
+  }
+  #SNS{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 0 10px;
+  }
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-list li{
+  font-size: 16px;
+  padding:0 25px ;
+  letter-spacing:3px ;    
+}
+.nav-list li:hover{
+  text-decoration: underline;
+}
+.footer{
+    padding-top: 150px;
+}
+.footer .nav-list{
+  width: 95%;
+  justify-content: flex-start;
+  padding: 0 0 80px 20px;
+}
+@media screen and (max-width: 1000px) {
+  #mainPhoto{
+    display: none;
+  }
+  #new{
+    width: 90%;
+    margin: 0 auto;
+  }
+  #new ul{
+    display: block;
+    width: 100%;
+
+  }
+  #new ul li{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+
+  }
+  #new img{
+    width: 70%;
+    margin: 0 auto;
+  }
+  #campaign ul li hr{
+    width: 200px;
+  }
+  #campaignP ul{
+    display: block;
+    width: 100%;
+  }
+  #campaignP img{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  #NewTopics{
+    padding-top: 50px;
+  }
+  #News{
+    padding-top: 50px;
+  }
+  #NewsA{
+    display: block;
+  }
+  #NewsA1{
+    width: 100%;
+    padding-top: 50px;
+  }
+  #NewsA1 ul{
+    width: 82%;
+    margin: 0 auto;
+  }
+  #NewsA2{
+    width: 100%;
+    padding-top: 50px;
+
+  }
+  #NewsA2 p{
+    text-align: center;
+  }
+  #NewsA2 ul{
+    width: 70%;
+    margin: 0 auto;
+  }
+  #NewsA2 ul li hr{
+    margin: 0 auto;
+  }
+  .NewsA2-1{
+    padding-top: 30px;
+    font-size: 15px;
+    margin-bottom: 3%;
+  }
+  #NewsA3{
+    width: 100%;
+    padding-top: 50px;
+
+  }
+  #NewsA3 p{
+    text-align: center;
+  }
+  #NewsA3 ul{
+    width: 70%;
+    margin: 0 auto;
+  }
+  #NewsA3 ul li hr{
+    margin: 0 auto;
+  }  
+  .NewsA3-1{
+    padding-top: 30px;
+    font-size: 15px;
+    margin-bottom: 3%;
+  }
+  center{
+    padding-top: 50px;
+  }
+  .footer{
+    padding-top: 50px;
+  }
+  
+  .nav-list{
+    display: none;
+}
+
+.table{
+    padding-top: 30px;
+}
+
+.table td{
+    border:solid 1px #d9d9d9;
+    text-align:center;
+    padding: 10px;
+    width: 50%;
+}
+
+.table a{
+    letter-spacing: 2px;
+    display: block;
+}
+
+
+}
+@media screen and (min-width: 1000px) {
+  .mainphoto{
+    display: none;
+  }
+  .contents-nav3{
+    display: none;
+  }
+  .table{
+    display: none;
+}
+}
